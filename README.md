@@ -1,5 +1,4 @@
 ## Workshop Web Dasar
-git
-nama : Wahyu Hakim
-nim  : 2025573010096
-kelas: TI IC
+Nama  : Wahyu Hakim
+NIM   : 2025573010126
+Kelas : TI 1C
