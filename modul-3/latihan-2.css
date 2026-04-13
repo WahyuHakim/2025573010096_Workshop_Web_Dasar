@@ -1,0 +1,103 @@
+/* RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* VARIABLES */
+:root {
+    --warna-utama: #2E86C1;
+    --warna-aksen: #E74C3C;
+    --warna-bg: #F8F9FA;
+    --warna-teks: #2C3E50;
+    --font: Arial, sans-serif;
+}
+
+/* BASE */
+body {
+    font-family: var(--font);
+    background: var(--warna-bg);
+    color: var(--warna-teks);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--warna-utama);
+    padding: 1rem 2rem;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-subscribe {
+    background: var(--warna-aksen);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.hero img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+/* BODY */
+.container {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.content {
+    flex: 7;
+}
+
+.sidebar {
+    flex: 3;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: var(--warna-teks);
+    color: white;
+    padding: 2rem;
+}
+
+.footer div {
+    width: 30%;
+}
