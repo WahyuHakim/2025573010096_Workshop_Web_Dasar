@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BurgerKu</title>
+
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">BurgerKu</div>
+
+    <nav class="menu">
+      <a href="#home">Home</a>
+      <a href="#kategori">Category</a>
+      <a href="#menu">Menu</a>
+      <a href="#testi">Testimoni</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <a href="#menu" class="btn-nav">Order Now</a>
+  </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-container">
+
+    <div class="hero-text">
+      <h1>Order Your Favorites in Minutes</h1>
+      <p>Makanan cepat, enak, dan langsung sampai ke rumah kamu.</p>
+      <a href="#menu" class="btn-primary">Pesan Sekarang</a>
+    </div>
+
+    <div class="hero-img">
+      <img src="https://static.vecteezy.com/system/resources/previews/021/952/564/original/free-tasty-hamburger-on-transparent-background-free-png.png" alt="burger">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= KATEGORI ================= -->
+<section id="kategori" class="kategori">
+  <h2>Kategori Menu</h2>
+
+  <div class="kategori-grid">
+    <div class="kategori-card">Burger</div>
+    <div class="kategori-card">Sandwich</div>
+    <div class="kategori-card">Fries</div>
+  </div>
+</section>
+
+
+<!-- ================= MENU ================= -->
+<section id="menu" class="menu-section">
+  <div class="container">
+    <h2>Menu Favorit</h2>
+    <div class="menu-grid">
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/d5/b0/b3/d5b0b3cca651b036b978731021da84fe.jpg">
+      <h3>Burger Spesial</h3>
+      <p>Rp 25.000</p>
+      <button>Order</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/8e/23/6f/8e236fbc85a12c35697e39d95249cb6e.jpg">
+      <h3>Burger Keju</h3>
+      <p>Rp 30.000</p>
+      <button>Order</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/ab/ab/de/ababde7e4706fb3c43d4b253439b44c3.jpg">
+      <h3>Burger Double</h3>
+      <p>Rp 35.000</p>
+      <button>Order</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= PROMO ================= -->
+<section class="promo">
+  <div class="promo-container">
+
+    <div class="promo-left">
+      <h2>Delivery Cepat</h2>
+      <p>Pesanan kamu akan sampai kurang dari 30 menit.</p>
+    </div>
+
+    <div class="promo-right">
+      <img src="https://i.pinimg.com/736x/ef/43/2e/ef432e842c7d1ace97b612990724d770.jpg">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= TESTIMONI ================= -->
+<section id="testi" class="testi">
+  <h2>Apa Kata Mereka</h2>
+
+  <div class="testi-grid">
+
+    <div class="testi-card">
+      <p>makanannya enak bangetttt!</p>
+      <h4>sanjero</h4>
+    </div>
+
+    <div class="testi-card">
+      <p> rotinya lembut daging nya juicy lucy mahalini rizky febian</p>
+      <h4>ciyo</h4>
+    </div>
+
+    <div class="testi-card">
+      <p>harga murah kualitas mamamia lezatos</p>
+      <h4>hakim</h4>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer id="kontak" class="footer">
+
+  <div class="footer-grid">
+
+    <div>
+      <h3>BurgerKu</h3>
+      <p>Menyediakan makanan cepat dan lezat untuk kamu.</p>
+    </div>
+
+    <div>
+      <h3>Menu</h3>
+      <ul>
+        <li>Home</li>
+        <li>Menu</li>
+        <li>Kontak</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Kontak</h3>
+      <p>Email: burgerku@gmail.com</p>
+      <p>Telp: 085169506048</p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- ================= ANIMASI SCROLL ================= -->
+<script>
+  const elements = document.querySelectorAll("section");
+
+  window.addEventListener("scroll", () => {
+    const trigger = window.innerHeight / 1.2;
+
+    elements.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+
+      if (top < trigger) {
+        el.classList.add("show");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

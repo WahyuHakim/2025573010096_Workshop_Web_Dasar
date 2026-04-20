@@ -1,0 +1,124 @@
+/* biar rapi dari awal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  padding: 1.5rem;
+}
+
+/* ================= FAQ ================= */
+.faq details {
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+/* ini efek nyala pas diklik / fokus */
+.faq details:focus-within {
+  border-color: #2E86C1;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq p {
+  margin-top: 0.5rem;
+}
+
+
+/* ================= GALERI ================= */
+.galeri {
+  display: grid;
+
+  /* 2x2 grid */
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.item {
+  position: relative;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* overlay gelap */
+.item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+
+  /* awalnya ga keliatan */
+  opacity: 0;
+
+  /* biar halus */
+  transition: opacity 0.3s;
+}
+
+/* muncul pas hover */
+.item:hover::before {
+  opacity: 1;
+}
+
+/* teks di tengah */
+.item span {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* teks ikut muncul */
+.item:hover span {
+  opacity: 1;
+}
+
+
+/* ================= PROGRESS ================= */
+.progress {
+  position: relative;
+  background: #eee;
+  height: 25px;
+  border-radius: 20px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+/* isi bar pakai before */
+.progress::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  /* lebar diambil dari variable */
+  width: var(--progress);
+
+  background: #2E86C1;
+
+  transition: width 0.5s;
+}
+
+/* teks */
+.progress span {
+  position: relative;
+  z-index: 1;
+  padding-left: 10px;
+  font-size: 0.85rem;
+  line-height: 25px;
+  color: #000;
+}

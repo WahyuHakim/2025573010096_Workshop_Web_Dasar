@@ -1,0 +1,125 @@
+/* reset biar semua rapi dari awal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+/* ini layout utama pake grid */
+.container {
+  display: grid;
+
+  /* ini pembagian posisi */
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+
+  /* kiri fix 240px, kanan bebas */
+  grid-template-columns: 240px 1fr;
+
+  min-height: 100vh;
+}
+
+/* bagian atas */
+.header {
+  grid-area: header;
+  background: #2C3E50;
+  color: white;
+  padding: 1rem;
+}
+
+/* menu samping */
+.sidebar {
+  grid-area: sidebar;
+  background: #D5F5E3;
+  padding: 1rem;
+
+  /* biar dia nempel terus waktu scroll */
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+/* isi utama */
+.main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+/* 4 kotak sejajar */
+.cards {
+  display: grid;
+
+  /* bagi jadi 4 kolom sama rata */
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* tampilan kotaknya */
+.card {
+  background: #D6EAF8;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* bagian bawah */
+.content-bawah {
+  display: grid;
+
+  /* tabel lebih besar, grafik lebih kecil */
+  grid-template-columns: 2fr 1fr;
+
+  gap: 1rem;
+}
+
+.tabel {
+  background: #FEF9E7;
+  padding: 2rem;
+}
+
+.grafik {
+  background: #FADBD8;
+  padding: 2rem;
+}
+
+/* kalau layar kecil */
+@media (max-width: 768px) {
+
+  /* ubah jadi 1 kolom */
+  .container {
+    grid-template-areas:
+      "header"
+      "main";
+    grid-template-columns: 1fr;
+  }
+
+  /* sidebar disembunyikan */
+  .sidebar {
+    display: none;
+  }
+
+  /* card jadi turun ke bawah */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* bawah juga jadi 1 kolom */
+  .content-bawah {
+    grid-template-columns: 1fr;
+  }
+}
