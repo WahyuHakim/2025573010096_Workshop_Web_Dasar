@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    @apply fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-orange-500 to-red-600 text-white;
+  }
+
+  .nav-container {
+    @apply container flex items-center justify-between h-16;
+  }
+
+  .logo {
+    @apply text-xl font-bold;
+  }
+
+  .menu {
+    @apply hidden md:flex gap-6 text-sm;
+  }
+
+  .menu a {
+    @apply hover:text-yellow-300 transition;
+  }
+
+  .btn-nav {
+    @apply bg-yellow-400 text-black px-4 py-2 rounded-full font-semibold hover:scale-105 transition;
+  }
+
+  /* HERO */
+  .hero {
+    @apply bg-gradient-to-br from-red-600 to-red-800 text-white py-20;
+  }
+
+  .hero-container {
+    @apply container grid grid-cols-1 md:grid-cols-2 gap-10 items-center;
+  }
+
+  .hero-text h1 {
+    @apply text-4xl md:text-5xl font-bold mb-4;
+  }
+
+  .hero-text p {
+    @apply mb-4;
+  }
+
+  .btn-primary {
+    @apply bg-yellow-400 text-black px-6 py-3 rounded-full font-bold hover:bg-orange-500 transition;
+  }
+
+  .hero-img img {
+    @apply w-full max-w-md mx-auto;
+  }
+
+  /* KATEGORI */
+  .kategori {
+    @apply py-12 text-center;
+  }
+
+  .kategori-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-4 mt-6;
+  }
+
+  .kategori-card {
+    @apply bg-red-500 text-white p-6 rounded-xl hover:-translate-y-1 hover:shadow-lg transition;
+  }
+
+  /* MENU */
+  .menu-section {
+    @apply py-12 text-center;
+  }
+
+  .menu-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 justify-center;
+  }
+
+  .card {
+    @apply bg-white dark:bg-slate-800 rounded-xl shadow p-4 max-w-[300px] mx-auto hover:-translate-y-2 transition;
+  }
+
+  .card img {
+    @apply w-full aspect-square object-cover rounded-lg mb-3;
+  }
+
+  .card h3 {
+    @apply font-bold mb-2;
+  }
+
+  .card p {
+    @apply text-red-500 font-semibold;
+  }
+
+  .card button {
+    @apply mt-2 bg-orange-500 text-white px-4 py-2 rounded hover:bg-red-600 transition;
+  }
+
+  /* PROMO FIX FULL HEIGHT */
+  .promo {
+    @apply py-12;
+  }
+
+  .promo-container {
+    @apply container grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch;
+  }
+
+  .promo-left {
+    @apply bg-yellow-400 p-6 rounded-xl h-full min-h-[300px] flex flex-col justify-center;
+  }
+
+  .promo-right {
+    @apply h-full;
+  }
+
+  .promo-right img {
+    @apply w-full h-full object-cover rounded-xl;
+  }
+
+  /* TESTIMONI */
+  .testi {
+    @apply py-12 text-center;
+  }
+
+  .testi-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8;
+  }
+
+  .testi-card {
+    @apply bg-white dark:bg-slate-800 p-6 rounded-xl shadow hover:scale-105 transition;
+  }
+
+  /* FOOTER */
+  .footer {
+    @apply bg-slate-900 text-white py-12;
+  }
+
+  .footer-grid {
+    @apply container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+}

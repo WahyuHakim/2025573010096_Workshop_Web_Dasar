@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BurgerKu</title>
+  </head>
+
+  <body
+    class="bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-white transition-colors duration-300"
+  >
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">BurgerKu</div>
+
+        <nav class="menu">
+          <a href="#home">Home</a>
+          <a href="#kategori">Category</a>
+          <a href="#menu">Menu</a>
+          <a href="#testi">Testimoni</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button
+            id="toggleDark"
+            class="bg-slate-800 px-3 py-1 rounded text-sm"
+          >
+            Dark
+          </button>
+          <a href="#menu" class="btn-nav">Order</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Order Your Favorites in Minutes</h1>
+          <p>Makanan cepat, enak, dan langsung sampai ke rumah kamu.</p>
+          <a href="#menu" class="btn-primary">Pesan Sekarang</a>
+        </div>
+
+        <div class="hero-img">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/021/952/564/original/free-tasty-hamburger-on-transparent-background-free-png.png"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- KATEGORI -->
+    <section id="kategori" class="kategori">
+      <h2 class="text-3xl font-bold mb-6">Kategori Menu</h2>
+
+      <div class="kategori-grid">
+        <div class="kategori-card">Burger</div>
+        <div class="kategori-card">Sandwich</div>
+        <div class="kategori-card">Fries</div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <h2 class="text-3xl font-bold mb-6">Menu Favorit</h2>
+
+        <div class="menu-grid">
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/736x/d5/b0/b3/d5b0b3cca651b036b978731021da84fe.jpg"
+            />
+            <h3>Burger Spesial</h3>
+            <p>Rp 25.000</p>
+            <button>Order</button>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/1200x/8e/23/6f/8e236fbc85a12c35697e39d95249cb6e.jpg"
+            />
+            <h3>Burger Keju</h3>
+            <p>Rp 30.000</p>
+            <button>Order</button>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/736x/ab/ab/de/ababde7e4706fb3c43d4b253439b44c3.jpg"
+            />
+            <h3>Burger Double</h3>
+            <p>Rp 35.000</p>
+            <button>Order</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO -->
+    <section class="promo">
+      <div class="promo-container">
+        <div class="promo-left">
+          <h2 class="text-xl font-bold">Delivery Cepat</h2>
+          <p>Pesanan kamu akan sampai kurang dari 30 menit.</p>
+        </div>
+
+        <div class="promo-right">
+          <img
+            src="https://i.pinimg.com/736x/ef/43/2e/ef432e842c7d1ace97b612990724d770.jpg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section id="testi" class="testi">
+      <h2 class="text-3xl font-bold mb-6">Apa Kata Mereka</h2>
+
+      <div class="testi-grid">
+        <div class="testi-card">
+          <p>makanannya enak bangetttt!</p>
+          <h4 class="mt-2 font-bold">sanjero</h4>
+        </div>
+
+        <div class="testi-card">
+          <p>rotinya lembut daging nya juicy</p>
+          <h4 class="mt-2 font-bold">ciyo</h4>
+        </div>
+
+        <div class="testi-card">
+          <p>harga murah kualitas bagus</p>
+          <h4 class="mt-2 font-bold">hakim</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="kontak" class="footer">
+      <div class="footer-grid">
+        <div>
+          <h3 class="font-bold">BurgerKu</h3>
+          <p>Menyediakan makanan cepat dan lezat untuk kamu.</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold">Menu</h3>
+          <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Kontak</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold">Kontak</h3>
+          <p>Email: burgerku@gmail.com</p>
+          <p>Telp: 085169506048</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
